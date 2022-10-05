@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(8, 8, 8, 0.881);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  color: white;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input[type=text],
+form button {
+
+  border: none;
+  background: rgba(255, 255, 255, 0.79);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+input[type=time],input[type=date]{
+  margin: 1%;
+  border: none;
+  font-size: 1.23rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.79);
+        transition: all 0.3s ease;
+}
+
+
+form button {
+  color: black;
+  background: rgba(255, 255, 255, 0.79);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: black;
+  color: rgba(255, 255, 255, 0.79);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.date-item{
+    margin-left: 0.5rem;
+    color: white;
+}
+.todo {
+  margin: 0.5rem;
+  background: rgba(255, 255, 255, 0.79);
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.filter-todo {
+  padding: 1rem;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #7b1414;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.trash-btn:hover,.complete-btn:hover{
+  color:rgba(255, 255, 255, 0.79);
+  background-color: black;
+}
+
+.complete-btn {
+  background: rgb(13, 69, 21);
+}
+
+.todo-item {
+  padding: 0rem 1rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+      transition: all 0.3s ease;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.79);
+  color: black;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 13rem;
+    transition: all 1s ease;
+  font-size: 1rem;
+}
+
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: black;
+  cursor: pointer;
+  pointer-events: none;
+}
